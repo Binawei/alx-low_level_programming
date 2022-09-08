@@ -1,2 +1,2 @@
 #!/bin/bash
-preprocessor output
+preprocessor output for c
