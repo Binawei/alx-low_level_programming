@@ -4,3 +4,4 @@ compiler
 assembled output
 executable file
 first program c
+printf output
