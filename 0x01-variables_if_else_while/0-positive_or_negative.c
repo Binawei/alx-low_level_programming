@@ -7,7 +7,6 @@
  */
 int main(void)
 {      int n;
-	printf("please enter a number");
 	scanf("%d", &n);
 	if (n > 0)
 	{
