@@ -5,7 +5,7 @@
  * main - Entry point
  * rand(): generates random functions
  * printf(): Displays output
- * Result: Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {       int n;
