@@ -1,11 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - hat prints _putchar, followed by a new line.
+ * main - print _putchar
  *
- * Return: Always (0) success
+ * Return:Always (0) success
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int i = 0;
+	char printC[] = {"_putchar"};
+
+	while (i < 8)
+	{
+		_putchar(printC[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
