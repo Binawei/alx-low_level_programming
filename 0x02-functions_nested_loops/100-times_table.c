@@ -6,18 +6,13 @@
  */
 void print_times_table(int n)
 {
-	for (n = 1; n < 15; n++)
+	for (n = 0; n <= 15; n++)
 	{
 		print_times_table(n);
 			_putchar('\n');
-	}
-
-	if ((n > 15) || (n < 0))
-	{
-		_putchar('\0');
-	}
-	else
-	{
-		_putchar(n);
+			if (n < 0 || n > 15)
+			{
+				_putchar('\0');
+			}
 	}
 }
