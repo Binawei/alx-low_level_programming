@@ -8,3 +8,4 @@ prints times table
 adds two integers
 counts all natural numbers upto 98
 4. prints alphabetical characters
+prints times_table
