@@ -6,3 +6,4 @@ prints last digit
 prints the hours of jack
 prints times table
 adds two integers
+counts all natural numbers upto 98
