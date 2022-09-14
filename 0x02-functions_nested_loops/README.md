@@ -5,3 +5,4 @@ checks for the sign of a number
 prints last digit
 prints the hours of jack
 prints times table
+adds two integers
