@@ -6,7 +6,11 @@
  */
 void print_times_table(int n)
 {
-	print_times_table(n);
+	for (n = 1; n < 15; n++)
+	{
+		print_times_table(n);
+			_putchar('\n');
+	}
 
 	if ((n > 15) || (n < 0))
 	{
