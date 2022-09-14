@@ -1,3 +1,4 @@
 _putchar character
 prints lowercase letters
 checks alphabetical characters
+checks for the sign of a number
