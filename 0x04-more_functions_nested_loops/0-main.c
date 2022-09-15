@@ -8,7 +8,5 @@ int main(void)
 {
 	void _putchar(void);
 
-	int _isdigit(int c);
-
 	return (0);
 }
