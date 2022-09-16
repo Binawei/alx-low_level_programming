@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * more_numbers - prints x10 of numbers
- *
- * Return: Always 0.
+ * more_numbers - prints numbers 0 to 14 x10
+ * Return: void
  */
 void more_numbers(void)
 {
 	int i, j;
 
-	i = 0;
-	while (i <= 9)
+	for (j = 0; j <= 9; j++)
 	{
-		j = 0;
-		while (j <= 14)
+		for (i = 0; i <= 14; i++)
 		{
-			_putchar(j);
-			j++;
+			if (i >= 10)
+			{
+				_putchar((i / 10) + '0');
+			}
+			_putchar((i % 10) + '0');
 		}
-		i++;
+		_putchar('\n');
 	}
 }
