@@ -4,3 +4,4 @@ multiplys two integers
 prints numbers from 0 to 9
 prints numbers from 0 to 9 except 2 and 4
 10 times the numbers, from 0 to 14
+hat draws a straight line in the terminal.
