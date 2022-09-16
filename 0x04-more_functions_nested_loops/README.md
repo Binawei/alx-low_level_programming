@@ -7,3 +7,4 @@ prints numbers from 0 to 9 except 2 and 4
 hat draws a straight line in the terminal.
 prints a square, followed by a new line
 fizzbuzz
+prints triangle
