@@ -8,3 +8,4 @@ hat draws a straight line in the terminal.
 prints a square, followed by a new line
 fizzbuzz
 prints triangle
+prints largest prime numbers
