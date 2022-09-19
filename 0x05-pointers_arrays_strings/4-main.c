@@ -7,6 +7,5 @@
 int main(void)
 {
 	void print_rev(char *s);
-	int _strlen(char *s);
 	return (0);
 }

@@ -8,18 +8,13 @@
  */
 void print_rev(char *s)
 {
-	int i, new;
-	int swap = 0;
+	int bina;
 
-	for (new = 0; s[new] != 0; new++)
+	for (bina = 0; s[bina] != '\0'; bina++)
 		;
-	for (i = 0; i < new / 2; i++)
+	for (bina = bina - 1; s[bina] != '\0'; bina--)
 	{
-		swap = s[i];
-		s[i] = s[new - 1 - i];
-		s[new - 1 - i] = swap;
+		_putchar(s[bina]);
 	}
-	for (i = 0; i < new; i++)
-		_putchar(s[i]);
 	_putchar('\n');
 }
