@@ -6,4 +6,5 @@ function that swaps the values of two integers.
 a function that reverses a strings
  function that prints half of a string,
 unction that convert a string to an integer
-program that generates random valid passwords 
+program that generates random valid passwords
+function that prints n elements of an array of integers, followed by a new line. 
