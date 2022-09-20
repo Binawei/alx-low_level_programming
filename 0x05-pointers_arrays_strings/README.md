@@ -4,4 +4,5 @@ function that swaps the values of two integers.
  function that prints a string
  prints a string, in reverse
 a function that reverses a strings
- function that prints half of a string, 
+ function that prints half of a string,
+unction that convert a string to an integer 
