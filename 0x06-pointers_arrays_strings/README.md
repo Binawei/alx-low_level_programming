@@ -8,3 +8,4 @@ function that capitalizes all words of a string.
 a function that encodes a string into 1337.
 function that prints an integer.
 function that encodes a string using rot13.
+magic 
