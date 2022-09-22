@@ -7,18 +7,15 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int x, y, answer;
+	int i;
 
-	x = 0;
-	while (s1[x] != '\0')
+
+	i = 0;
+	while (s1[i] == s2[i])
 	{
-		x++;
+		if (s1[i] == '\0' && s2[i] == '\0')
+			return (0);
+		i++;
 	}
-	y = 0;
-	while (s2[y] != '\0')
-	{
-		y++;
-	}
-	answer = (x - y) * 15;
-	return (answer);
+	return (s1[i] - s2[i]);
 }
