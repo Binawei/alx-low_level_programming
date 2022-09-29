@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	void _print_rev_recursion(char *s);
+	_print_rev_recursion("\nColton walker");
 	return (0);
 }
