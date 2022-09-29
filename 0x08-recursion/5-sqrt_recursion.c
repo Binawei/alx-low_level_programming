@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * helper - finds the square root of two numbers
+ * finder - finds the square root of two numbers
  * @x: the number
  * @y: the number to test for the square root of @x
  *
