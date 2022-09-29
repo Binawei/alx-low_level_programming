@@ -6,6 +6,11 @@
  */
 int main(void)
 {
-	int is_palindrome(char *s);
+	int r;
+
+	r = is_palindrome("madam");
+	_putchar(r);
+	r = is_palindrome("level");
+	_putchar(r);
 	return (0);
 }
