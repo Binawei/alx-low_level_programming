@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	int _sqrt_recursion(int n);
+	_sqrt_recursion(100);
 	return (0);
 }
