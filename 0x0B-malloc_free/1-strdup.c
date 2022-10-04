@@ -22,10 +22,12 @@ char *_strdup(char *str)
 	}
 
 	/*allocate memory for the duplicate string bin including the '\0'*/
-	for (i = 0; str[i]; i++)
+	i = 0;
+	while (str[i])
 	{
-		bin = malloc(sizeof(char) * (i + 1));
+		i++;
 	}
+	bin = malloc(sizeof(char) * (i + 1));
 
 	if (bin == NULL)
 	{
