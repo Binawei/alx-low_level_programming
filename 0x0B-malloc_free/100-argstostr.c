@@ -10,41 +10,38 @@
 char *argstostr(int ac, char **av)
 {
 	char *str;
-	int i, j, k;
-	int count = 0;
+	int i, j, k, count;
 
-	if (ac == 0 || av == NULL)
+	if (ac == 0)
+	{
 		return (NULL);
+	}
+	if (av == 0)
+	{
+		return (NULL);
+	}
+	count = 0;
 	for (i = 0; i < ac; i++)
 	{
-		j = 0;
-		while (av[i][j] != '\0')
+		for (k = 0; av[i][k] != '\0'; k++)
 		{
 			count++;
-			j++;
 		}
+		count++;
 	}
-	/*allocating memory to the pointer*/
-	str = malloc(sizeof(char) * (ac + 1 + count));
-	if (str == NULL)
-	{
+	count++;
+	str = malloc(count * sizeof(char));
+	if (str == 0)
 		return (NULL);
-	}
+	j = 0;
 	for (i = 0; i < ac; i++)
 	{
-		j = 0;
-		while (1)
+		for (k = 0; av[i][k] != '\0'; k++)
 		{
-			if (av[i][j] == '\0')
-			{
-				str[k] = '\n';
-				k++;
-				break;
-			}
-			str[k] = av[i][j];
-			k++;
-			j++;
+			str[j++] = av[i][k];
 		}
+		str[j++] = '\n';
 	}
+	str[j++] = '\0';
 	return (str);
 }
