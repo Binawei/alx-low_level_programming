@@ -32,10 +32,10 @@ char *string_concat(char *s1, char *s2, unsigned int n)
 		j++;
 	if (j < n)
 	{
-		gba = malloc(sizeof(char) * (i + j + 1));
+		gba = malloc(sizeof(char) * (i + j- 1));
 	}
 	else
-		gba = malloc((i + n +  1) * sizeof(char));
+		gba = malloc((i + n ) * sizeof(char));
 	if (gba == 0)
 	{
 		return (NULL);
