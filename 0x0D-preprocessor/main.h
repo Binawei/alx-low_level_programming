@@ -1,4 +1,4 @@
 #ifndef MAIN_H
 #define MAIN_H
-0-object_like_macro.h
+int _putchar(char c);
 #endif /*MAIN_H*/
