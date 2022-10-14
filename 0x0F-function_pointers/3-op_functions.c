@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "3-call.h"
+#include "3-cal.h"
 /**
  * op_add - adds two integers to gether
  * @a: integer 1.
@@ -28,7 +28,7 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	return (a - b);
+	return (a * b);
 }
 /**
  * op_div - devides two integers
@@ -38,6 +38,11 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a / b);
 }
 /**
@@ -48,5 +53,10 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a % b);
 }
