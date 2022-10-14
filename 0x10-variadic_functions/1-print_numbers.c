@@ -22,6 +22,10 @@ void print_numbers(char *seperator, const unsigned int n, ...)
 		{
 			printf("%s ", seperator);
 		}
+		if (seperator == NULL)
+		{
+			continue;
+		}
 	}
 	printf("\n");
 	va_end(ap);
