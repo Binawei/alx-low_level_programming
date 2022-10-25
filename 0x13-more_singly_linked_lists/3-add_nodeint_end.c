@@ -13,8 +13,13 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *nav;
 	/*creat the new node to be added*/
 	listint_t *new;
-	new = malloc(sizeof(listint_t));
 	nav = *head;
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
 	/*updating the data part of the node  and link part*/
 	new->n = n;
 	new->next = NULL;
@@ -25,7 +30,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (*head);
 	}
 	/*traverse the list*/
-	while (nav->next != NULL)
+	while (nav && nav->next != NULL)
 	{
 		nav = nav->next;
 	}
