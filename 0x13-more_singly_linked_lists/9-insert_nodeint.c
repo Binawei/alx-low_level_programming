@@ -12,7 +12,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *ptr;/*to traverse the list*/
 	listint_t *new;/*new node to be inserted*/
-	unsigned int count = 0;
+	unsigned int count = 1;
 
 	ptr = *head;
 	new = malloc(sizeof(listint_t));
