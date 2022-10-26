@@ -11,11 +11,9 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	listint_t *ptr;/*for traversal*/
-	unsigned int count = 0;/*to loop the linked li
-			       	 listint_t ind; the index to return*/
+	unsigned int count = 0;/*to loop the linked list*/
 	/*traverse from the head*/
 	ptr = head;
-	/*ind = ptr->n;*/
 	while (ptr != NULL)
 	{
 		if (count == index)
