@@ -14,7 +14,6 @@ int sum_listint(listint_t *head)
 	int sum = 0;
 
 	tra = head;/*Initialize a pointer ptr with the head of the linked list*/
-	sum = tra->n;
 	while (tra != NULL)/*traverse using whlie loop*/
 	{
 		sum += tra->n;/*Add the value of current node to the sum*/
