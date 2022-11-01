@@ -11,3 +11,7 @@ Prototype: int get_bit(unsigned long int n, unsigned int index);
 3.
  a function that sets the value of a bit to 1 at a given index.
 Prototype: int set_bit(unsigned long int *n, unsigned int index);
+
+4.
+a function that sets the value of a bit to 0 at a given index.
+Prototype: int clear_bit(unsigned long int *n, unsigned int index);
