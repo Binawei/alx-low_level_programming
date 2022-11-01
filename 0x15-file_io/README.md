@@ -6,3 +6,6 @@ Prototype: int create_file(const char *filename, char *text_content);
 2.
 Write a function that appends text at the end of a file.
 Prototype: int append_text_to_file(const char *filename, char *text_content);
+3.
+ a program that copies the content of a file to another file.
+Usage: cp file_from file_to
