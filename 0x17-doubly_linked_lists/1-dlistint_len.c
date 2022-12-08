@@ -10,8 +10,8 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	const dlistint_t *traversal;
 	size_t count;
+
 	traversal = h;
-	
 	count = 0;
 	while (traversal != NULL)
 	{
