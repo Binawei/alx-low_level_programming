@@ -2,8 +2,8 @@
 #include "lists.h"
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position.
- * @head: pointer of pointer to the first node
- * @index: index of the list where the new node should be added
+ * @h: pointer of pointer to the first node
+ * @idx: index of the list where the new node should be added
  * @n: the data value of the new node
  *
  * Return: the address of the new node, or NULL if it failed
@@ -19,14 +19,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	count = 0;
-	while (count != (idx - 1))
+	while (count < (idx - 1))
 	{
 		temp = temp->next;
 		count++;
 	}
 	ptr->n = n;
-        ptr->next = temp->next;
-	temp->next->prev = ptr;
+	ptr->next = temp->next;
+	temp->next = ptr->prev;
 	temp->next = ptr;
 	ptr->prev = temp;
 	return (ptr);
